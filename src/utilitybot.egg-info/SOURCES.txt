@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/app/__init__.py
+src/app/auth.py
+src/app/bot.py
+src/app/cards.py
+src/app/config.py
+src/app/db.py
+src/app/main.py
+src/utilitybot.egg-info/PKG-INFO
+src/utilitybot.egg-info/SOURCES.txt
+src/utilitybot.egg-info/dependency_links.txt
+src/utilitybot.egg-info/requires.txt
+src/utilitybot.egg-info/top_level.txt
+tests/test_api.py
+tests/test_cards.py

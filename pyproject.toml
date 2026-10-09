@@ -1,0 +1,31 @@
+[project]
+name = "utilitybot"
+version = "0.1.0"
+description = "Web dashboard and multi-guild Discord bot"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "sqlalchemy[asyncio]==2.0.37",
+  "aiosqlite==0.20.0",
+  "asyncpg==0.30.0",
+  "alembic==1.14.1",
+  "pydantic-settings==2.7.1",
+  "httpx==0.28.1",
+  "itsdangerous==2.2.0",
+  "Pillow==11.1.0",
+  "discord.py==2.7.1",
+  "mcstatus==11.1.1",
+  "python-multipart==0.0.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4", "pytest-asyncio==0.25.2", "ruff==0.9.3", "mypy==1.14.1"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
